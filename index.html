@@ -57,6 +57,11 @@
         </div>
         <button class="btn yellow darken-2 z-depth-0">Sign up</button>
       </form>
+
+      <br>
+      <button id="googleAuth" class="btn black darken-2 z-depth-0 center">google</button>
+      <button id="facebookAuth" class="btn blue darken-2 z-depth-0">Facebook</button>
+      <br>
     </div>
   </div>
 
@@ -73,10 +78,7 @@
           <input type="password" id="login-password" required />
           <label for="login-password">Your password</label>
         </div>
-        <button id="googleAuth" class="btn black darken-2 z-depth-0 center">google</button>
-        <button id="facebookAuth" class="btn blue darken-2 z-depth-0">Facebook</button>
-        <br>
-        <br>
+
         <button class="btn yellow darken-2 z-depth-0">Login</button>
       </form>
     </div>
@@ -137,7 +139,7 @@
     //------------------------------------------Authentication---------------------------------//
     var Facebookprovider = new firebase.auth.FacebookAuthProvider();
 
-  
+
     // make auth and firestore references
     const auth = firebase.auth();
     const db = firebase.firestore();
